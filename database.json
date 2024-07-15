@@ -1,67 +1,58 @@
 {
-  "accounts": [
-    {
-      "id": "1",
-      "email": "admin@gmail.com",
-      "password": "123",
-      "fullName": "Admin",
-      "gender": "male",
-      "dob": "2000-01-01",
-      "role": "admin"
-    },
-    {
-      "id": "2",
-      "email": "olala1@gmail.com",
-      "password": "123",
-      "fullName": "Linh1",
-      "gender": "male",
-      "dob": "2000-01-01",
-      "role": "user"
-    },
-    {
-      "id": "3",
-      "email": "olala2@gmail.com",
-      "password": "123",
-      "fullName": "Linh2",
-      "gender": "male",
-      "dob": "2000-01-01",
-      "role": "user"
-    },
-    {
-      "id": "4",
-      "email": "olala3@gmail.com",
-      "password": "123",
-      "fullName": "Linh3",
-      "gender": "female",
-      "dob": "2000-01-01",
-      "role": "user"
-    },
-    {
-      "id": "2508",
-      "email": "abc@gmail.com",
-      "password": "12345671",
-      "fullName": "Linh4",
-      "gender": "male",
-      "dob": "2024-04-11",
-      "role": "user"
-    },
-    {
-      "id": "d154",
-      "email": "olala5@gmail.com",
-      "password": "12345678",
-      "name": "Linh5",
-      "gender": "male",
-      "dob": "2024-03-31",
-      "role": "user"
-    },
-    {
-      "id": "18f0",
-      "email": "ngocanh2k3@gmail.com",
-      "password": "12345678",
-      "name": "ngoc anh",
-      "gender": "female",
-      "dob": "2004-06-15",
-      "role": "user"
-    }
-  ]
+    "accounts": [
+        {
+            "id": "1",
+            "email": "admin@gmail.com",
+            "password": "123",
+            "fullName": "Admin",
+            "gender": "male",
+            "dob": "2000-01-01",
+            "role": "admin"
+        },
+        {
+            "id": "2",
+            "email": "olala1@gmail.com",
+            "password": "123",
+            "fullName": "Linh1",
+            "gender": "male",
+            "dob": "2000-01-01",
+            "role": "user"
+        },
+        {
+            "id": "3",
+            "email": "olala2@gmail.com",
+            "password": "123",
+            "fullName": "Linh2",
+            "gender": "male",
+            "dob": "2000-01-01",
+            "role": "user"
+        },
+        {
+            "id": "4",
+            "email": "olala3@gmail.com",
+            "password": "123",
+            "fullName": "Linh3",
+            "gender": "female",
+            "dob": "2000-01-01",
+            "role": "user"
+        },
+        {
+            "id": "2508",
+            "email": "abc@gmail.com",
+            "password": "12345671",
+            "fullName": "Linh4",
+            "gender": "male",
+            "dob": "2024-04-11",
+            "role": "user"
+        },
+        {
+            "id": "d154",
+            "email": "olala5@gmail.com",
+            "password": "12345678",
+            "name": "Linh5",
+            "gender": "male",
+            "dob": "2024-03-31",
+            "role": "user"
+        }
+    ]
 }
