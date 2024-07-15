@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col, Carousel, Button } from 'react-bootstrap'
+import { Container, Row, Col, Carousel, Nav, Navbar, Button } from 'react-bootstrap'
 const Header = () => {
     const handleSignOut = () => {
         localStorage.removeItem('user');
@@ -24,7 +24,8 @@ const Header = () => {
 
                 <Row style={{ padding: '0', textAlign: 'right' }} >
                     <Col md={12} className="d-none d-lg-block d-print-block" style={{ display: 'flex', justifyContent: 'right', backgroundColor: 'blue' }}>
-                        <Button variant="link" style={{ margin: '0px 10px', color: 'white' }} href="#">Sign Up</Button> |
+
+                        <Button variant="link" style={{ margin: '0px 10px', color: 'white' }} href="/auth/Sign-up">Sign Up</Button> |
                         <Button variant="link" style={{ margin: '0px 10px', color: 'white' }} href="/auth/Sign-in">Sign In</Button>
                     </Col>
                 </Row>
@@ -64,5 +65,6 @@ const Header = () => {
         </div>
     )
 }
+
 
 export default Header
