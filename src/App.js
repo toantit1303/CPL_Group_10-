@@ -1,4 +1,3 @@
-import { Container, Row, Col } from 'react-bootstrap';
 import { Route, Routes, BrowserRouter, Navigate } from 'react-router-dom';
 import { useState, useEffect } from "react";
 import Home from './components/Home';
@@ -24,6 +23,8 @@ function App() {
   return (
     <Container fluid >
       <Row>
+        
+
         <Header />
       </Row>
       <Row>
@@ -33,6 +34,7 @@ function App() {
               <Col>
                 <Routes>
                   <Route path="/" element={<Home />} />
+                  <Route path="/auth/Sign-in" element={<SignIn />} />
                   <Route path="/auth/Sign-up" element={<SignUp />} />
                 </Routes>
               </Col>
@@ -44,4 +46,6 @@ function App() {
   );
 }
 
+
 export default App;
+

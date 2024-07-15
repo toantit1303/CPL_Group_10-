@@ -24,8 +24,9 @@ const Header = () => {
 
                 <Row style={{ padding: '0', textAlign: 'right' }} >
                     <Col md={12} className="d-none d-lg-block d-print-block" style={{ display: 'flex', justifyContent: 'right', backgroundColor: 'blue' }}>
+
                         <Button variant="link" style={{ margin: '0px 10px', color: 'white' }} href="/auth/Sign-up">Sign Up</Button> |
-                        <Button variant="link" style={{ margin: '0px 10px', color: 'white' }} >Sign In</Button>
+                        <Button variant="link" style={{ margin: '0px 10px', color: 'white' }} href="/auth/Sign-in">Sign In</Button>
                     </Col>
                 </Row>
                 <Row style={{ display: 'flex', padding: '0' }}>
@@ -65,5 +66,5 @@ const Header = () => {
     )
 }
 
-export default Header
 
+export default Header
