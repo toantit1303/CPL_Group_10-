@@ -1,58 +1,684 @@
 {
-    "accounts": [
+  "products": [
+    {
+      "id": "P001",
+      "Name": "Television LG UHD",
+      "Price": "699$",
+      "CatID": 1,
+      "quantity": 10,
+      "createDate": "2022-11-12",
+      "status": true,
+      "image": "/product/pro1.jpg"
+    },
+    {
+      "id": "P002",
+      "Name": "Máy giặt Panasonic",
+      "Price": "500$",
+      "CatID": 2,
+      "quantity": 10,
+      "createDate": "2020-04-04",
+      "status": true,
+      "image": "/product/pro2.png"
+    },
+    {
+      "id": "P003",
+      "Name": "Điều hòa Panasonic",
+      "Price": "999$",
+      "CatID": 3,
+      "quantity": 100,
+      "createDate": "2018-12-01",
+      "status": true,
+      "image": "/product/pro3.jpg"
+    },
+    {
+      "id": "P004",
+      "Name": "Máy lạnh Casper",
+      "Price": "669$",
+      "CatID": 3,
+      "quantity": 1,
+      "createDate": "2018-12-01",
+      "status": true,
+      "image": "/product/pro4.jpg"
+    },
+    {
+      "id": "P005",
+      "Name": "Television SONY Bravia",
+      "Price": "1000$",
+      "CatID": 1,
+      "quantity": 1,
+      "createDate": "2020-04-04",
+      "status": true,
+      "image": "/product/pro5.jpg"
+    },
+    {
+      "id": "P006",
+      "Name": "Tủ lạnh Sharp",
+      "Price": "1104$",
+      "quantity": 1,
+      "createDate": "2024-04-13",
+      "CatID": 4,
+      "status": true,
+      "image": "/product/pro6.jpg"
+    },
+    {
+      "id": "P007",
+      "Name": "Tủ lạnh Samsum",
+      "Price": "1222$",
+      "quantity": 12,
+      "createDate": "2024-05-07",
+      "CatID": 4,
+      "status": true,
+      "image": "/product/pro7.jpg"
+    },
+    {
+      "id": "P008",
+      "Name": "Máy giặt LG Z4",
+      "Price": "522$",
+      "CatID": 2,
+      "quantity": 112345,
+      "createDate": "2024-05-07",
+      "status": true,
+      "image": "/product/pro8.jpg"
+    },
+    {
+      "id": "P009",
+      "Name": "Television Sony 4k ultra HD",
+      "Price": "900$",
+      "CatID": 1,
+      "quantity": 112345,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro9.jpg"
+    },
+    {
+      "id": "P010",
+      "Name": "Television Sharp",
+      "Price": "999$",
+      "CatID": 1,
+      "quantity": 2345,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro10.jpg"
+    },
+    {
+      "id": "P011",
+      "Name": "Tủ lạnh Toshiba",
+      "Price": "1900$",
+      "CatID": 4,
+      "quantity": 25,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro11.jpg"
+    },
+    {
+      "id": "P012",
+      "Name": "Tủ lạnh Sanaki",
+      "Price": "200$",
+      "CatID": 4,
+      "quantity": 25,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro12.jpg"
+    },
+    {
+      "id": "P013",
+      "Name": "Tủ lạnh Asanyo",
+      "Price": "780$",
+      "CatID": 4,
+      "quantity": 30,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro13.png"
+    },
+    {
+      "id": "P014",
+      "Name": "Máy giặt Daiki",
+      "Price": "780$",
+      "CatID": 2,
+      "quantity": 30,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro14.jpg"
+    },
+    {
+      "id": "P015",
+      "Name": "Điều hòa Daiki",
+      "Price": "1280$",
+      "CatID": 3,
+      "quantity": 30,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro15.jpg"
+    },
+    {
+      "id": "P016",
+      "Name": "Điều hòa Comfee",
+      "Price": "480$",
+      "CatID": 3,
+      "quantity": 303,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro16.jpg"
+    },
+    {
+      "id": "P017",
+      "Name": "Điều hòa cây LG",
+      "Price": "1580$",
+      "CatID": 3,
+      "quantity": 33,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro17.jpg"
+    },
+    {
+      "id": "P018",
+      "Name": "Điều hòa cây Daiki",
+      "Price": "1200$",
+      "CatID": 3,
+      "quantity": 30,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro18.jpg"
+    },
+    {
+      "id": "P019",
+      "Name": "Galaxy Z Fold 6",
+      "Price": "2280$",
+      "CatID": 5,
+      "quantity": 50,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro19.jpg"
+    },
+    {
+      "id": "P020",
+      "Name": "Galaxy Z Flip 6",
+      "Price": "1980$",
+      "CatID": 5,
+      "quantity": 50,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro20.jpg"
+    },
+    {
+      "id": "P021",
+      "Name": "Iphone 15 pro max",
+      "Price": "2460$",
+      "CatID": 5,
+      "quantity": 50,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro21.jpg"
+    },
+    {
+      "id": "P022",
+      "Name": "Iphone 15 pro plus",
+      "Price": "2020$",
+      "CatID": 5,
+      "quantity": 20,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro22.jpg"
+    },
+    {
+      "id": "P023",
+      "Name": "Iphone 13",
+      "Price": "650$",
+      "CatID": 5,
+      "quantity": 20,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro23.jpg"
+    },
+    {
+      "id": "P024",
+      "Name": "Lenovo LOQ",
+      "Price": "1250$",
+      "CatID": 6,
+      "quantity": 20,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro24.jpg"
+    },
+    {
+      "id": "P025",
+      "Name": "Dell Insprion 15",
+      "Price": "800$",
+      "CatID": 6,
+      "quantity": 20,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro25.jpg"
+    },
+    {
+      "id": "P026",
+      "Name": "Asus Vivobook",
+      "Price": "700$",
+      "CatID": 6,
+      "quantity": 20,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro26.jpg"
+    },
+    {
+      "id": "P027",
+      "Name": "Asus TUF",
+      "Price": "700$",
+      "CatID": 6,
+      "quantity": 20,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro27.jpg"
+    },
+    {
+      "id": "P028",
+      "Name": "Apple M2",
+      "Price": "1300$",
+      "CatID": 6,
+      "quantity": 20,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro28.jpg"
+    },
+    {
+      "id": "P029",
+      "Name": "Asus Zenbook",
+      "Price": "700$",
+      "CatID": 6,
+      "quantity": 20,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro29.jpg"
+    },
+    {
+      "id": "P030",
+      "Name": "PC CPS Gaming G02",
+      "Price": "660$",
+      "CatID": 7,
+      "quantity": 20,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro30.jpg"
+    },
+    {
+      "id": "P031",
+      "Name": "PC CPS văn phòng S01",
+      "Price": "450$",
+      "CatID": 7,
+      "quantity": 20,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro31.jpg"
+    },
+    {
+      "id": "P032",
+      "Name": "PC CPS văn phòng S021",
+      "Price": "550$",
+      "CatID": 7,
+      "quantity": 20,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro32.jpg"
+    },
+    {
+      "id": "P033",
+      "Name": "PC CPS Gaming G06",
+      "Price": "750$",
+      "CatID": 7,
+      "quantity": 20,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro33.jpg"
+    },
+    {
+      "id": "P034",
+      "Name": "PC CPS Gaming G07",
+      "Price": "850$",
+      "CatID": 7,
+      "quantity": 20,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro34.jpg"
+    },
+    {
+      "id": "P035",
+      "Name": "Galaxy S24 Ultra",
+      "Price": "2400$",
+      "CatID": 5,
+      "quantity": 50,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro35.jpg"
+    },
+    {
+      "id": "P036",
+      "Name": "Samsung Note 20 Ultra",
+      "Price": "1700$",
+      "CatID": 5,
+      "quantity": 50,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro36.jpg"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "catName": "Tivi"
+    },
+    {
+      "id": "2",
+      "catName": "Máy giặt"
+    },
+    {
+      "id": "3",
+      "catName": "Điều hòa"
+    },
+    {
+      "id": "4",
+      "catName": "Tủ lạnh"
+    },
+    {
+      "id": "5",
+      "catName": "Điện thoại"
+    },
+    {
+      "id": "6",
+      "catName": "Laptop"
+    },
+    {
+      "id": "7",
+      "catName": "Desktop"
+    }
+  ],
+  "accounts": [
+    {
+      "id": "1",
+      "email": "admin@gmail.com",
+      "password": "123",
+      "fullName": "Admin",
+      "gender": "male",
+      "dob": "2000-01-01",
+      "avatar": "/avatar/ava7.png",
+      "role": "admin",
+      "ban": false
+    },
+    {
+      "id": "2",
+      "email": "olala1@gmail.com",
+      "password": "123",
+      "fullName": "Linh",
+      "gender": "male",
+      "dob": "2000-01-01",
+      "avatar": "/avatar/ava1.jpg",
+      "role": "user",
+      "ban": false
+    },
+    {
+      "id": "3",
+      "email": "olala2@gmail.com",
+      "password": "123",
+      "fullName": "Toàn",
+      "gender": "male",
+      "dob": "2000-01-01",
+      "avatar": "/avatar/ava2.jpg",
+      "role": "user",
+      "ban": false
+    },
+    {
+      "id": "4",
+      "email": "olala3@gmail.com",
+      "password": "123",
+      "fullName": "Tùng",
+      "gender": "female",
+      "dob": "2000-01-01",
+      "avatar": "/avatar/ava3.jpg",
+      "role": "user",
+      "ban": false
+    },
+    {
+      "id": "2508",
+      "email": "abc@gmail.com",
+      "password": "12345671",
+      "fullName": "Ngọc Anh",
+      "gender": "male",
+      "dob": "2024-04-11",
+      "avatar": "/avatar/ava4.jpg",
+      "role": "user",
+      "ban": false
+    },
+    {
+      "id": "d154",
+      "email": "olala5@gmail.com",
+      "password": "12345678",
+      "fullName": "Linh 0",
+      "gender": "male",
+      "dob": "2024-03-31",
+      "avatar": "/avatar/ava5.jpg",
+      "role": "user",
+      "ban": false
+    },
+    {
+      "id": "30f5",
+      "email": "Linh@gmail.com",
+      "password": "123456789",
+      "fullName": "Linh",
+      "gender": "male",
+      "dob": "2003-08-31",
+      "avatar": "/avatar/ava6.jpg",
+      "role": "user",
+      "ban": false
+    },
+    {
+      "id": "oksa",
+      "email": "Linh22@gmail.com",
+      "password": "123",
+      "fullName": "Linh",
+      "gender": "male",
+      "dob": "2003-08-31",
+      "avatar": "/avatar/ava6.jpg",
+      "role": "user",
+      "ban": true
+    }
+  ],
+  "orders": [
+    {
+      "id": "1720961080748",
+      "orderDate": "2024-07-14T12:44:40.748Z",
+      "status": 1,
+      "total": 1728,
+      "userInfo": [
         {
-            "id": "1",
-            "email": "admin@gmail.com",
-            "password": "123",
-            "fullName": "Admin",
-            "gender": "male",
-            "dob": "2000-01-01",
-            "role": "admin"
-        },
-        {
-            "id": "2",
-            "email": "olala1@gmail.com",
-            "password": "123",
-            "fullName": "Linh1",
-            "gender": "male",
-            "dob": "2000-01-01",
-            "role": "user"
-        },
-        {
-            "id": "3",
-            "email": "olala2@gmail.com",
-            "password": "123",
-            "fullName": "Linh2",
-            "gender": "male",
-            "dob": "2000-01-01",
-            "role": "user"
-        },
-        {
-            "id": "4",
-            "email": "olala3@gmail.com",
-            "password": "123",
-            "fullName": "Linh3",
-            "gender": "female",
-            "dob": "2000-01-01",
-            "role": "user"
-        },
-        {
-            "id": "2508",
-            "email": "abc@gmail.com",
-            "password": "12345671",
-            "fullName": "Linh4",
-            "gender": "male",
-            "dob": "2024-04-11",
-            "role": "user"
-        },
-        {
-            "id": "d154",
-            "email": "olala5@gmail.com",
-            "password": "12345678",
-            "name": "Linh5",
-            "gender": "male",
-            "dob": "2024-03-31",
-            "role": "user"
+          "uId": "2",
+          "fullName": "Linh1",
+          "address": "Sao hỏa",
+          "mobile": "12345678",
+          "email": "olala1@gmail.com"
         }
-    ]
+      ],
+      "orderDetail": [
+        {
+          "Pid": "P002",
+          "pName": "Television LG",
+          "Price": "800$",
+          "vat": "8%",
+          "quantity": 2,
+          "discount": ""
+        }
+      ]
+    },
+    {
+      "id": "1720961209296",
+      "orderDate": "2024-07-14T12:46:49.296Z",
+      "status": 1,
+      "total": 216,
+      "userInfo": [
+        {
+          "uId": "2",
+          "fullName": "Linh1",
+          "address": "mặt trăng",
+          "mobile": "00000000",
+          "email": "olala1@gmail.com"
+        }
+      ],
+      "orderDetail": [
+        {
+          "Pid": "P001",
+          "pName": "Television Honda",
+          "Price": "100$",
+          "vat": "8%",
+          "quantity": 2,
+          "discount": ""
+        }
+      ]
+    },
+    {
+      "id": "1721009110863",
+      "orderDate": "2024-07-15T02:05:10.863Z",
+      "status": 1,
+      "total": 216003888,
+      "userInfo": [
+        {
+          "uId": "2",
+          "fullName": "Linh1",
+          "address": "ádfghj",
+          "mobile": "2345364756897",
+          "email": "olala1@gmail.com"
+        }
+      ],
+      "orderDetail": [
+        {
+          "Pid": "P003",
+          "pName": "Olala",
+          "Price": "1000$",
+          "vat": "8%",
+          "quantity": 2,
+          "discount": ""
+        },
+        {
+          "Pid": "P004",
+          "pName": "Linh",
+          "Price": "100000000$",
+          "vat": "8%",
+          "quantity": 2,
+          "discount": ""
+        },
+        {
+          "Pid": "P002",
+          "pName": "Television LG",
+          "Price": "800$",
+          "vat": "8%",
+          "quantity": 2,
+          "discount": ""
+        }
+      ]
+    },
+    {
+      "id": "1721010306382",
+      "orderDate": "2024-07-15T02:25:06.382Z",
+      "status": 1,
+      "total": 120003481.80000001,
+      "userInfo": [
+        {
+          "uId": "2",
+          "fullName": "Linh1",
+          "address": "Sao hỏa",
+          "mobile": "00000000",
+          "email": "olala1@gmail.com"
+        }
+      ],
+      "orderDetail": [
+        {
+          "Pid": "P003",
+          "pName": "Olala",
+          "Price": "1000$",
+          "vat": "8%",
+          "quantity": 2,
+          "discount": ""
+        },
+        {
+          "Pid": "P004",
+          "pName": "Linh",
+          "Price": "100000000$",
+          "vat": "8%",
+          "quantity": 1,
+          "discount": ""
+        },
+        {
+          "Pid": "P008",
+          "pName": "Phi 2",
+          "Price": "2$",
+          "vat": "8%",
+          "quantity": 1,
+          "discount": ""
+        },
+        {
+          "Pid": "P007",
+          "pName": "ko bt",
+          "Price": "1222$",
+          "vat": "8%",
+          "quantity": 1,
+          "discount": ""
+        },
+        {
+          "Pid": "P006",
+          "pName": "Linh 2",
+          "Price": "11111111$",
+          "vat": "8%",
+          "quantity": 1,
+          "discount": ""
+        }
+      ]
+    },
+    {
+      "id": "1721015868961",
+      "orderDate": "2024-07-15T03:57:48.961Z",
+      "status": 1,
+      "total": 1080,
+      "userInfo": [
+        {
+          "uId": "2",
+          "fullName": "Linh1",
+          "address": "Sao hỏa",
+          "mobile": "12345678",
+          "email": "olala1@gmail.com"
+        }
+      ],
+      "orderDetail": [
+        {
+          "Pid": "P005",
+          "pName": "Television SONY Bravia",
+          "Price": "1000$",
+          "vat": "8%",
+          "quantity": 1,
+          "discount": ""
+        }
+      ]
+    },
+    {
+      "id": "1721100877455",
+      "orderDate": "2024-07-16T03:34:37.455Z",
+      "status": 1,
+      "total": 4315.68,
+      "userInfo": [
+        {
+          "uId": "2",
+          "fullName": "Linh1",
+          "address": "mặt trăng",
+          "mobile": "00000000",
+          "email": "olala1@gmail.com"
+        }
+      ],
+      "orderDetail": [
+        {
+          "Pid": "P003",
+          "pName": "Điều hòa Panasonic",
+          "Price": "999$",
+          "vat": "8%",
+          "quantity": 4,
+          "discount": ""
+        }
+      ]
+    }
+  ]
 }
