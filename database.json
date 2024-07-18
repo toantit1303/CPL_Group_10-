@@ -54,5 +54,397 @@
             "dob": "2024-03-31",
             "role": "user"
         }
-    ]
+    ],
+    "categories": [
+        {
+          "id": "1",
+          "catName": "Tivi"
+        },
+        {
+          "id": "2",
+          "catName": "Máy giặt"
+        },
+        {
+          "id": "3",
+          "catName": "Điều hòa"
+        },
+        {
+          "id": "4",
+          "catName": "Tủ lạnh"
+        },
+        {
+          "id": "5",
+          "catName": "Điện thoại"
+        },
+        {
+          "id": "6",
+          "catName": "Laptop"
+        },
+        {
+          "id": "7",
+          "catName": "Desktop"
+        }
+      ],
+      "products": [
+    {
+      "id": "P001",
+      "Name": "Television LG UHD",
+      "Price": "699$",
+      "CatID": 1,
+      "quantity": 10,
+      "createDate": "2022-11-12",
+      "status": true,
+      "image": "/product/pro1.jpg"
+    },
+    {
+      "id": "P002",
+      "Name": "Máy giặt Panasonic",
+      "Price": "500$",
+      "CatID": 2,
+      "quantity": 10,
+      "createDate": "2020-04-04",
+      "status": true,
+      "image": "/product/pro2.png"
+    },
+    {
+      "id": "P003",
+      "Name": "Điều hòa Panasonic",
+      "Price": "999$",
+      "CatID": 3,
+      "quantity": 100,
+      "createDate": "2018-12-01",
+      "status": true,
+      "image": "/product/pro3.jpg"
+    },
+    {
+      "id": "P004",
+      "Name": "Máy lạnh Casper",
+      "Price": "669$",
+      "CatID": 3,
+      "quantity": 1,
+      "createDate": "2018-12-01",
+      "status": true,
+      "image": "/product/pro4.jpg"
+    },
+    {
+      "id": "P005",
+      "Name": "Television SONY Bravia",
+      "Price": "1000$",
+      "CatID": 1,
+      "quantity": 1,
+      "createDate": "2020-04-04",
+      "status": true,
+      "image": "/product/pro5.jpg"
+    },
+    {
+      "id": "P006",
+      "Name": "Tủ lạnh Sharp",
+      "Price": "1104$",
+      "quantity": 1,
+      "createDate": "2024-04-13",
+      "CatID": 4,
+      "status": true,
+      "image": "/product/pro6.jpg"
+    },
+    {
+      "id": "P007",
+      "Name": "Tủ lạnh Samsum",
+      "Price": "1222$",
+      "quantity": 12,
+      "createDate": "2024-05-07",
+      "CatID": 4,
+      "status": true,
+      "image": "/product/pro7.jpg"
+    },
+    {
+      "id": "P008",
+      "Name": "Máy giặt LG Z4",
+      "Price": "522$",
+      "CatID": 2,
+      "quantity": 112345,
+      "createDate": "2024-05-07",
+      "status": true,
+      "image": "/product/pro8.jpg"
+    },
+    {
+      "id": "P009",
+      "Name": "Television Sony 4k ultra HD",
+      "Price": "900$",
+      "CatID": 1,
+      "quantity": 112345,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro9.jpg"
+    },
+    {
+      "id": "P010",
+      "Name": "Television Sharp",
+      "Price": "999$",
+      "CatID": 1,
+      "quantity": 2345,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro10.jpg"
+    },
+    {
+      "id": "P011",
+      "Name": "Tủ lạnh Toshiba",
+      "Price": "1900$",
+      "CatID": 4,
+      "quantity": 25,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro11.jpg"
+    },
+    {
+      "id": "P012",
+      "Name": "Tủ lạnh Sanaki",
+      "Price": "200$",
+      "CatID": 4,
+      "quantity": 25,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro12.jpg"
+    },
+    {
+      "id": "P013",
+      "Name": "Tủ lạnh Asanyo",
+      "Price": "780$",
+      "CatID": 4,
+      "quantity": 30,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro13.png"
+    },
+    {
+      "id": "P014",
+      "Name": "Máy giặt Daiki",
+      "Price": "780$",
+      "CatID": 2,
+      "quantity": 30,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro14.jpg"
+    },
+    {
+      "id": "P015",
+      "Name": "Điều hòa Daiki",
+      "Price": "1280$",
+      "CatID": 3,
+      "quantity": 30,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro15.jpg"
+    },
+    {
+      "id": "P016",
+      "Name": "Điều hòa Comfee",
+      "Price": "480$",
+      "CatID": 3,
+      "quantity": 303,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro16.jpg"
+    },
+    {
+      "id": "P017",
+      "Name": "Điều hòa cây LG",
+      "Price": "1580$",
+      "CatID": 3,
+      "quantity": 33,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro17.jpg"
+    },
+    {
+      "id": "P018",
+      "Name": "Điều hòa cây Daiki",
+      "Price": "1200$",
+      "CatID": 3,
+      "quantity": 30,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro18.jpg"
+    },
+    {
+      "id": "P019",
+      "Name": "Galaxy Z Fold 6",
+      "Price": "2280$",
+      "CatID": 5,
+      "quantity": 50,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro19.jpg"
+    },
+    {
+      "id": "P020",
+      "Name": "Galaxy Z Flip 6",
+      "Price": "1980$",
+      "CatID": 5,
+      "quantity": 50,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro20.jpg"
+    },
+    {
+      "id": "P021",
+      "Name": "Iphone 15 pro max",
+      "Price": "2460$",
+      "CatID": 5,
+      "quantity": 50,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro21.jpg"
+    },
+    {
+      "id": "P022",
+      "Name": "Iphone 15 pro plus",
+      "Price": "2020$",
+      "CatID": 5,
+      "quantity": 20,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro22.jpg"
+    },
+    {
+      "id": "P023",
+      "Name": "Iphone 13",
+      "Price": "650$",
+      "CatID": 5,
+      "quantity": 20,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro23.jpg"
+    },
+    {
+      "id": "P024",
+      "Name": "Lenovo LOQ",
+      "Price": "1250$",
+      "CatID": 6,
+      "quantity": 20,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro24.jpg"
+    },
+    {
+      "id": "P025",
+      "Name": "Dell Insprion 15",
+      "Price": "800$",
+      "CatID": 6,
+      "quantity": 20,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro25.jpg"
+    },
+    {
+      "id": "P026",
+      "Name": "Asus Vivobook",
+      "Price": "700$",
+      "CatID": 6,
+      "quantity": 20,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro26.jpg"
+    },
+    {
+      "id": "P027",
+      "Name": "Asus TUF",
+      "Price": "700$",
+      "CatID": 6,
+      "quantity": 20,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro27.jpg"
+    },
+    {
+      "id": "P028",
+      "Name": "Apple M2",
+      "Price": "1300$",
+      "CatID": 6,
+      "quantity": 20,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro28.jpg"
+    },
+    {
+      "id": "P029",
+      "Name": "Asus Zenbook",
+      "Price": "700$",
+      "CatID": 6,
+      "quantity": 20,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro29.jpg"
+    },
+    {
+      "id": "P030",
+      "Name": "PC CPS Gaming G02",
+      "Price": "660$",
+      "CatID": 7,
+      "quantity": 20,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro30.jpg"
+    },
+    {
+      "id": "P031",
+      "Name": "PC CPS văn phòng S01",
+      "Price": "450$",
+      "CatID": 7,
+      "quantity": 20,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro31.jpg"
+    },
+    {
+      "id": "P032",
+      "Name": "PC CPS văn phòng S021",
+      "Price": "550$",
+      "CatID": 7,
+      "quantity": 20,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro32.jpg"
+    },
+    {
+      "id": "P033",
+      "Name": "PC CPS Gaming G06",
+      "Price": "750$",
+      "CatID": 7,
+      "quantity": 20,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro33.jpg"
+    },
+    {
+      "id": "P034",
+      "Name": "PC CPS Gaming G07",
+      "Price": "850$",
+      "CatID": 7,
+      "quantity": 20,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro34.jpg"
+    },
+    {
+      "id": "P035",
+      "Name": "Galaxy S24 Ultra",
+      "Price": "2400$",
+      "CatID": 5,
+      "quantity": 50,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro35.jpg"
+    },
+    {
+      "id": "P036",
+      "Name": "Samsung Note 20 Ultra",
+      "Price": "1700$",
+      "CatID": 5,
+      "quantity": 50,
+      "status": true,
+      "createDate": "2024-05-07",
+      "image": "/product/pro36.jpg"
+    }
+  ]
 }
