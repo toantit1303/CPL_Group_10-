@@ -5,7 +5,6 @@ import Home from './components/Home';
 import Product from './components/Products';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Categories from './components/ExtraMenu';
 
 
 
