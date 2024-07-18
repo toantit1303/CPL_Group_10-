@@ -8,9 +8,9 @@ export default function Home() {
         <Container fluid>
 
 
-                <div class="jumbotron">
-                    <h1 class="display-4">Welcome to shop!!</h1>
-                </div>
+            <div className="jumbotron">
+                <h1 className="display-4">Welcome to shop!!</h1>
+            </div>
         </Container>
     )
 }

@@ -15,18 +15,22 @@ export default function SignIn() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const user = account.find(acc => acc.email == loginEmail && acc.password == loginPassword)
-        if(user){
-            if (user.role === 'admin') {
-                localStorage.setItem('user', JSON.stringify(user)); 
-                window.location.href = '/admin/products'; 
-            } else if (user) {
-                localStorage.setItem('user', JSON.stringify(user)); 
-                window.location.href = '/'; 
+        const user = account.find(acc => acc.email === loginEmail && acc.password === loginPassword);
+
+        if (user) {
+            if (user.ban === true) {
+                alert('Your account has been banned');
+                return;
             }
-        }
-        else {
-            alert(`Invalid login`);
+            if (user.role === 'admin') {
+                localStorage.setItem('user', JSON.stringify(user));
+                window.location.href = '/admin/products';
+            } else if (user.role === 'user') {
+                localStorage.setItem('user', JSON.stringify(user));
+                window.location.href = '/';
+            }
+        } else {
+            alert('Invalid login');
         }
     }
 
@@ -70,3 +74,13 @@ export default function SignIn() {
         </Container>
     )
 }
+
+
+
+
+
+
+
+
+
+
