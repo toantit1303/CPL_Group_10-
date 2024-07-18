@@ -28,11 +28,12 @@ const Header = () => {
                     {user ? (
                         <Col md={12} style={{ display: 'flex', justifyContent: 'right', backgroundColor: 'red' }}>
                             <Button variant="link" style={{ margin: '0px 10px', color: 'white' }}>
-                                <Link to={`/user/${user.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+
+                                <Link to={`#`} style={{ textDecoration: 'none', color: 'inherit' }}>
                                     {user.fullName}
                                 </Link>
                             </Button>|
-                            <Button variant="link" style={{ margin: '0px 10px', color: 'white' }} href="/history">History order</Button> |
+                            <Button variant="link" style={{ margin: '0px 10px', color: 'white' }} href="#">History order</Button> |
                             <Button variant="link" onClick={handleSignOut} style={{ color: 'white' }}>Sign Out</Button>
                         </Col>
                     ) : (
