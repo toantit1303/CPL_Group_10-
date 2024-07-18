@@ -26,11 +26,17 @@ const Header = () => {
 
                 <Row style={{ padding: '0', textAlign: 'right' }} >
                     {user ? (
-                        <Col md={12} className="d-none d-lg-block d-print-block" style={{ display: 'flex', justifyContent: 'right', backgroundColor: 'red' }}>                     
+                        <Col md={12} style={{ display: 'flex', justifyContent: 'right', backgroundColor: 'red' }}>
+                            <Button variant="link" style={{ margin: '0px 10px', color: 'white' }}>
+                                <Link to={`/user/${user.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                                    {user.fullName}
+                                </Link>
+                            </Button>|
+                            <Button variant="link" style={{ margin: '0px 10px', color: 'white' }} href="#">History order</Button> |
                             <Button variant="link" onClick={handleSignOut} style={{ color: 'white' }}>Sign Out</Button>
                         </Col>
                     ) : (
-                        <Col md={12} className="d-none d-lg-block d-print-block" style={{ display: 'flex', justifyContent: 'right', backgroundColor: 'red' }}>
+                        <Col md={12} style={{ display: 'flex', justifyContent: 'right', backgroundColor: 'red' }}>
                             <Button variant="link" style={{ margin: '0px 10px', color: 'white' }} href="/auth/Sign-up">Sign Up</Button> |
                             <Button variant="link" style={{ margin: '0px 10px', color: 'white' }} href="/auth/Sign-in">Sign In</Button>
                         </Col>
@@ -75,7 +81,7 @@ const Header = () => {
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="ml-auto">
                                 <Nav.Link href="/">Home</Nav.Link>
-                                <Nav.Link href="#">Products</Nav.Link>
+                                <Nav.Link href="/products">Products</Nav.Link>
                                 <Nav.Link href="#">About us</Nav.Link>
                                 <Nav.Link href="#">Contact</Nav.Link>
                             </Nav>

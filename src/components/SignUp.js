@@ -15,7 +15,7 @@ export default function SignUp() {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [name, setName] = useState('');
+    const [fullName, setName] = useState('');
     const [gender, setGender] = useState('');
     const [dob, setDob] = useState('');
 
@@ -41,9 +41,12 @@ export default function SignUp() {
         const data = {
             email,
             password,
-            name,
+            fullName,
             gender,
-            dob
+            dob,
+            avatar: '/avatar/ava0.jpg',
+            role: 'user',
+            ban: false
         }
 
         fetch(`http://localhost:9999/accounts`, {
@@ -51,7 +54,7 @@ export default function SignUp() {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ ...data, role: 'user' })
+            body: JSON.stringify({ data })
         })
             .then(res => res.json())
             .then(result => {
@@ -102,7 +105,7 @@ export default function SignUp() {
                             </Form.Label>
                         </Col>
                         <Col xs={10} style={{ justifyContent: 'center', textAlign: 'left' }}>
-                            <Form.Control type="text" value={name} onChange={(e) => setName(e.target.value)} />
+                            <Form.Control type="text" value={fullName} onChange={(e) => setName(e.target.value)} />
                         </Col>
                     </Row>
                     <Row style={{ margin: '10px 0px' }}>
