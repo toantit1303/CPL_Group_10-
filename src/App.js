@@ -10,6 +10,7 @@ import ProductList from './components/ProductList';
 import Categories from './components/ExtraMenu';
 import Account from './components/Account';
 import AccountList from './components/AccountList';
+import ProductDetail from './components/ProductDetail';
 
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
                 <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/products" element={<Product data={products} />} />
+                  <Route path="/product/:pId" element={<ProductDetail />} />
                   <Route path="/product/category/:cate_id" element={<Product />} />
                   <Route path="/user/:uId" element={<Account />} />
                   <Route path="/auth/Sign-up" element={<SignUp />} />

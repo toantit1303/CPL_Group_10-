@@ -34,7 +34,7 @@ export default function Product({ data = [] }) {
                                     style={{ height: '200px', width: 'auto', objectFit: 'contain' }}
                                 />
                                 <div className="card-body">
-                                    <h6><Link to={`/#`}>{p.Name}</Link></h6>
+                                    <h6><Link to={`/product/${p.id}`}>{p.Name}</Link></h6>
                                     <p className="card-text">{p.Price}</p>
                                     <Button variant="primary" >Add to cart</Button>
                                 </div>
