@@ -17,11 +17,12 @@ export default function Categories({ data = [] }) {
                     </thead>
                     <tbody>
                         <tr>
-                        <td><Link to="/admin/products">Products</Link></td>
+                            <td><Link to="/admin/products">Products</Link></td>
                         </tr>
                         <tr>
-                        <td><Link to="/admin/accountList">Account List</Link></td>
+                            <td><Link to="/admin/accountList">Account List</Link></td>
                         </tr>
+                        
                     </tbody>
                 </Table>
             ) : (
