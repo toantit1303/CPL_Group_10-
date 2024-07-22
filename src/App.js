@@ -9,6 +9,7 @@ import Product from './components/Products';
 import ProductList from './components/ProductList';
 import Categories from './components/ExtraMenu';
 import Account from './components/Account';
+import AccountList from './components/AccountList';
 
 
 function App() {
@@ -57,6 +58,7 @@ function App() {
                   {user && user.role === 'admin' ? (
                     <>
                       <Route path="/admin/products" element={<ProductList />} />
+                      <Route path="/admin/accountList" element={<AccountList />} />
                     </>
                   ) : (
                     <Route path="/admin/*" element={<AreNotAdmin />} />
