@@ -12,6 +12,7 @@ import Account from './components/Account';
 import AccountList from './components/AccountList';
 import Cart from './components/Cart';
 import ProductDetail from './components/ProductDetail';
+import VerifyOrder from './components/VerifyOrder';
 
 
 function App() {
@@ -57,6 +58,8 @@ function App() {
                   <Route path="/user/:uId" element={<Account />} />
                   <Route path="/auth/Sign-up" element={<SignUp />} />
                   <Route path="/auth/Sign-in" element={<SignIn />} />
+                  <Route path="/cart/VerifyOrder" element={<VerifyOrder />} />
+
 
 
                   {user && user.role === 'admin' ? (
