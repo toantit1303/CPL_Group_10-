@@ -32,7 +32,7 @@ const Header = () => {
                                     {user.fullName}
                                 </Link>
                             </Button>|
-                            <Button variant="link" style={{ margin: '0px 10px', color: 'white' }} href="#">History order</Button> |
+                            <Button variant="link" style={{ margin: '0px 10px', color: 'white' }} href="/history">History order</Button> |
                             <Button variant="link" onClick={handleSignOut} style={{ color: 'white' }}>Sign Out</Button>
                         </Col>
                     ) : (
@@ -82,13 +82,12 @@ const Header = () => {
                             <Nav className="ml-auto">
                                 <Nav.Link href="/">Home</Nav.Link>
                                 <Nav.Link href="/products">Products</Nav.Link>
-                                <Nav.Link href="#">About us</Nav.Link>
+                                <Nav.Link href="/aboutus">About us</Nav.Link>
                                 <Nav.Link href="#">Contact</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
-
             </Row>
         </div>
     )

@@ -22,7 +22,9 @@ export default function Categories({ data = [] }) {
                         <tr>
                             <td><Link to="/admin/accountList">Account List</Link></td>
                         </tr>
-                        
+                        <tr>
+                            <td><Link to="/admin/category/add">Manage Categories</Link></td>
+                        </tr>
                     </tbody>
                 </Table>
             ) : (

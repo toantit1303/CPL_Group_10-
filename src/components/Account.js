@@ -1,19 +1,34 @@
-import React from 'react'
-import { useEffect, useState } from "react";
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import { useParams } from "react-router-dom";
+import { useParams } from 'react-router-dom';
+import AccountEdit from './AccountEdit';
 
 export default function Account() {
     const [account, setAccount] = useState({});
     const { uId } = useParams();
+    const [show, setShow] = useState(false);
 
     useEffect(() => {
         fetch(`http://localhost:9999/accounts/${uId}`)
             .then(res => res.json())
-            .then(result => setAccount(result))
-    }, [])
+            .then(result => setAccount(result));
+    }, [uId]);
 
+    const handleShow = () => setShow(true);
+    const handleClose = () => setShow(false);
 
+    const handleSave = (updatedAccount) => {
+        fetch(`http://localhost:9999/accounts/${uId}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(updatedAccount)
+        }).then(() => {
+            setAccount(updatedAccount);
+            handleClose();
+        });
+    }
 
     return (
         <Container fluid>
@@ -26,7 +41,7 @@ export default function Account() {
                             height: '10vw',
                             maxWidth: '150px',
                             maxHeight: '150px',
-                        }} />
+                        }} onClick={handleShow} />
                 </Col>
                 <Col xs="10" style={{ justifyContent: 'center', textAlign: 'left' }}>
                     <Form>
@@ -74,16 +89,21 @@ export default function Account() {
                             </Col>
                         </Row>
 
-
                         <Row style={{ margin: '10px 0px' }}>
                             <Col md={{ span: 10, offset: 2 }}>
-                                <Button type="submit">Update</Button>
+                                <Button onClick={handleShow}>Update</Button>
                             </Col>
                         </Row>
                     </Form>
                 </Col >
             </Row >
-        </Container >
+
+            <AccountEdit
+                account={account}
+                show={show}
+                handleClose={handleClose}
+                handleSave={handleSave}
+            />
+        </Container>
     )
 }
-
