@@ -94,7 +94,7 @@ export default function Cart() {
                         <td style={{ border: '1px solid black' }}>{c.id}</td>
                         <td style={{ border: '1px solid black' }}>{c.Name}</td>
                         <td style={{ border: '1px solid black' }}>{c.Price}</td>
-                        <td style={{ border: '1px solid black' }}><img src={c.image} alt={c.Name} style={{ width: '100%' }} /></td>
+                        <td style={{ border: '1px solid black' }}><img src={c.image} alt={c.Name} style={{ height: '150px', width: 'auto', objectFit: 'contain' }} /></td>
                         <td style={{ border: '1px solid black' }}>{c.quantity}</td>
                         <td style={{ border: '1px solid black' }}>{total}$</td>
                         <td style={{ border: '1px solid black' }}>

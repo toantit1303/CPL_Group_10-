@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Col, Form, Table } from 'react-bootstrap';
-import { Link, useParams } from "react-router-dom";
+import { Container, Row, Col, Form, Table, Pagination } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
 export default function ProductList() {
-    const [product, setProduct] = useState([]);
+    const [products, setProducts] = useState([]);
     const [categories, setCategories] = useState([]);
     const [search, setSearch] = useState("");
+    const [currentPage, setCurrentPage] = useState(1);
+    const productsPerPage = 10;
 
     useEffect(() => {
         getCategories();
@@ -23,9 +25,30 @@ export default function ProductList() {
             .then(res => res.json())
             .then(result => {
                 const searchResult = result.filter(p => p.Name.toLowerCase().includes(search.toLowerCase()));
-                setProduct(searchResult);
+                setProducts(searchResult);
             })
     };
+
+    // Calculate the products to display on the current page
+    const indexOfLastProduct = currentPage * productsPerPage;
+    const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+    const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
+
+    // Handle page change
+    const handlePageChange = (pageNumber) => {
+        setCurrentPage(pageNumber);
+    };
+
+    // Generate pagination items
+    const totalPages = Math.ceil(products.length / productsPerPage);
+    const paginationItems = [];
+    for (let i = 1; i <= totalPages; i++) {
+        paginationItems.push(
+            <Pagination.Item key={i} active={i === currentPage} onClick={() => handlePageChange(i)}>
+                {i}
+            </Pagination.Item>
+        );
+    }
 
     return (
         <Container fluid>
@@ -39,11 +62,11 @@ export default function ProductList() {
                     />
                 </Col>
                 <Col xs={3} style={{ textAlign: 'right' }}>
-                    <Link to="#">Create Product</Link>
+                    <Link to="/admin/product/create">Create Product</Link>
                 </Col>
             </Row>
             <Table className="col-12" hover striped>
-                {product.length === 0 ? (
+                {products.length === 0 ? (
                     <tbody>
                         <tr style={{ border: '1px solid black' }}>
                             <td colSpan={7} style={{ border: '1px solid black', textAlign: 'center' }}>No products found</td>
@@ -63,7 +86,7 @@ export default function ProductList() {
                             </tr>
                         </thead>
                         <tbody>
-                            {product.map(p => {
+                            {currentProducts.map(p => {
                                 const cat = categories.find(c => c.id == p.CatID);
                                 return (
                                     <tr key={p.id} style={{ border: '1px solid black' }}>
@@ -73,11 +96,12 @@ export default function ProductList() {
                                         <td style={{ border: '1px solid black' }}>{cat?.catName}</td>
                                         <td style={{ border: '1px solid black' }}>{p.quantity}</td>
                                         <td style={{ border: '1px solid black' }}>
-                                            <img src={p.image} alt={p.Name} className="img-fluid" style={{ widows: '100px' }} />
+                                            <img src={p.image} alt={p.Name} className="img-fluid"
+                                                style={{ height: '200px', width: 'auto', objectFit: 'contain' }} />
                                         </td>
                                         <td style={{ border: '1px solid black', textAlign: 'center' }}>
-                                            <Link to={"#"} className="btn btn-success">Edit</Link>{" "}
-                                            <Link to={"#"} className="btn btn-danger">Delete</Link>{" "}
+                                            <Link to={`/admin/product/edit/${p.id}`} className="btn btn-success">Edit</Link>{" "}
+                                            <Link to={`/admin/product/delete/${p.id}`} className="btn btn-danger">Delete</Link>{" "}
                                         </td>
                                     </tr>
                                 )
@@ -86,6 +110,15 @@ export default function ProductList() {
                     </>
                 )}
             </Table>
+            <Row>
+                <Col>
+                    <Pagination>
+                        <Pagination.Prev onClick={() => currentPage > 1 && handlePageChange(currentPage - 1)} />
+                        {paginationItems}
+                        <Pagination.Next onClick={() => currentPage < totalPages && handlePageChange(currentPage + 1)} />
+                    </Pagination>
+                </Col>
+            </Row>
         </Container>
     );
 }

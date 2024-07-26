@@ -110,7 +110,7 @@ export default function VerifyOrder() {
                                     <Row style={{ margin: '10px 0px' }}>
                                         <Col xs={2} style={{ justifyContent: 'center', textAlign: 'left' }}> Mobile </Col>
                                         <Col xs={10}>
-                                            <Form.Control type="text" name="phone" />
+                                            <Form.Control type="number" name="phone" />
                                         </Col>
                                     </Row>
                                     <Row style={{ margin: '10px 0px' }}>

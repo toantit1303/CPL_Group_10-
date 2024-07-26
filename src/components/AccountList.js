@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Form, Table } from 'react-bootstrap';
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
+import BanAccount from "./BanAccount";
 
 export default function AccountList() {
     const [acc, setAcc] = useState([]);
@@ -18,9 +19,21 @@ export default function AccountList() {
                     return a.fullName && a.fullName.toLowerCase().includes(search.toLowerCase());
                 });
                 setAcc(searchResult);
-            })
+            });
     };
 
+    const handleToggleBan = async (id, currentBanStatus) => {
+        const updatedBanStatus = !currentBanStatus;
+        await fetch(`http://localhost:9999/accounts/${id}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ ban: updatedBanStatus }),
+        });
+
+        getAccount();
+    };
 
     return (
         <Container fluid>
@@ -75,8 +88,14 @@ export default function AccountList() {
                                         </td>
                                         <td style={{ border: '1px solid black' }}>{a.role}</td>
                                         <td style={{ border: '1px solid black', textAlign: 'center' }}>
-                                            <Link to={`#`} className="btn btn-warning">Ban</Link>{" "}
-                                            <Link to={`#`} className="btn btn-danger">Delete</Link>{" "}
+                                            {a.role !== "admin" && (
+                                                <>
+                                                    <BanAccount id={a.id} ban={a.ban} onToggle={handleToggleBan} />
+                                                    <Link to={`/admin/account/delete/${a.id}`} className="btn btn-danger">Delete</Link>
+                                                </>
+                                            ) || (
+                                                    <h6>this is admin account</h6>
+                                                )}
                                         </td>
                                     </tr>
                                 )
